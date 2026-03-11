@@ -1,0 +1,223 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url(../img/fundo.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #df3131;
+      color: #fff;
+      text-align: center;
+    }
+
+    .topo {
+      background-color: #031f7c;
+      padding: 10px 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d7e60d;
+      padding: 10px 20px;
+    }
+
+    .search-box input {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+    }
+
+    .links a {
+      margin-left: 40px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .logo-abaixo {
+      display: block;
+      width: 150px;
+      margin: 15px 0 30px 20px;
+      height: auto;
+    }
+
+    .conteudo {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+    }
+
+    .conteudo h1, .conteudo h2 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .conteudo p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .imagem-centralizada {
+      display: block;
+      max-width: 700px;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 15px;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #d7e60d;
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-cta:hover {
+      background-color: #c1d803;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #fff;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    
+
+    
+    .imagem-descricao {
+      max-width: 250px;
+      width: 100%;
+      border-radius: 15px;
+      display: block;
+
+    }
+
+    .plano.glam {
+  background: linear-gradient(135deg, #1d1d1d, #333);
+  border: 2px solid #ffd700;
+  color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.plano.glam:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  background: linear-gradient(135deg, #444, #000);
+}
+
+.plano.glam h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-shadow: 0 0 5px #ffd700;
+}
+
+.plano.glam .velocidade {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.plano.glam.destaque {
+  border-color: #fbff00;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.plano.glam.destaque:hover {
+  background: linear-gradient(135deg, #0ff, #000);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+    .planos-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+    .videos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: nowrap; 
+    }
+
+    .videos video {
+      flex: 0 0 250px; /* largura fixa para controlar o tamanho */
+      height: 200px;    /* altura fixa proporcional */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Ajustes para telas menores */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .search-box {
+        margin-bottom: 10px;
+      }
+      .logo-abaixo {
+        margin-left: 20px;
+        width: 120px;
+        margin-bottom: 20px;
+      }
+      .conteudo {
+        padding: 20px;
+      }
+      .planos-container {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .videos-container {
+        max-width: 100%;
+      }
+    }

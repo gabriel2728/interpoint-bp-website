@@ -1,0 +1,235 @@
+ /* Reset básico e fonte padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url(../img/fundo.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #df3131;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .topo {
+      background-color: #031f7c;
+      padding: 10px 0;
+      flex-shrink: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d7e60d;
+      padding: 8px 20px;
+      flex-shrink: 0;
+    }
+
+    .search-box input {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+      font-size: 1rem;
+    }
+
+    .links a {
+      margin-left: 30px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover,
+    .links a:focus {
+      text-decoration: underline;
+      color: #333300;
+      outline: none;
+    }
+
+    /* Logo abaixo da navbar, alinhado à esquerda */
+    .logo-abaixo {
+      display: block;
+      width: 150px;
+      margin: 15px 0 30px 20px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    /* Galeria 3 fotos em linha */
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap; /* manter em uma linha */
+      padding: 0 20px;
+      max-width: 1000px;
+      margin: 0 auto 30px;
+      flex-grow: 1;
+    }
+
+    .item {
+      width: 200px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Efeito zoom nas imagens */
+    .imagem-link {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .imagem-link:hover,
+    .imagem-link:focus {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+      outline: none;
+    }
+
+    .legenda {
+      font-size: 18px;
+      color: #ffffff;
+      margin-top: 8px;
+      text-align: center;
+      min-height: 50px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    /* Última imagem menor embaixo, centralizada */
+    .ultima-imagem-container {
+      margin: 0 auto 40px;
+      display: flex;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .ultima-imagem {
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #fff;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+      color: #d7e60d;
+      outline: none;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .galeria {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .item {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search-box {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .search-box input {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .links {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .links a {
+        margin-left: 0;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        background: #c1d803;
+        border-radius: 8px;
+        color: #000;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .logo-abaixo {
+        margin-left: 20px;
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      .galeria {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 10px;
+      }
+
+      .item {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .legenda {
+        min-height: auto;
+      }
+
+      .ultima-imagem-container {
+        margin-top: 10px;
+      }
+
+      .ultima-imagem {
+        width: 100%;
+        max-width: 250px;
+      }
+    }

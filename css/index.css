@@ -1,0 +1,127 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url(../img/fundo.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #df3131;
+      color: #fff;
+      text-align: center;
+    }
+
+    .topo {
+      background-color: #031f7c;
+      padding: 10px 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d7e60d;
+      padding: 10px 20px;
+    }
+
+    .search-box input {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+    }
+
+    .links a {
+      margin-left: 40px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .logo-abaixo {
+      display: block;
+      width: 150px;
+      margin: 15px 0 30px 20px;
+      height: auto;
+      text-align: left;
+    }
+
+    .hero {
+  background: url("imagens/fundo-hero.jpg") no-repeat center center/cover;
+  min-height: 60vh;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;    
+}
+
+
+    .slogan {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      max-width: 700px;
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ffc400;
+    }
+
+    .rodape {
+      background-color: #111;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .slogan {
+        font-size: 1.5rem;
+      }
+
+      .logo-abaixo {
+        margin-left: 20px;
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .links {
+        margin-top: 10px;
+      }
+    }

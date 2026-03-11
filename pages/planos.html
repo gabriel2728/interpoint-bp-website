@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <!-- Configurações da página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>InterPoint BP - Planos</title>
+
+  <!-- CSS da página -->
+  <link rel="stylesheet" href="../css/planos.css">
+
+</head>
+
+<body>
+
+  <!-- Barra superior -->
+  <header class="topo" role="banner"></header>
+
+
+  <!-- Menu de navegação -->
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+
+    <!-- Campo de busca -->
+    <div class="search-box">
+
+      <label for="search-input" class="visually-hidden">
+        Pesquisar
+      </label>
+
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Pesquisar..."
+      >
+
+    </div>
+
+
+    <!-- Links do menu -->
+    <div class="links">
+
+      <a href="produtos.html">Produtos e Serviços</a>
+
+      <a href="planos.html">Planos</a>
+
+      <a href="contato.html">Contato</a>
+
+      <a href="sobre.html">Sobre a Empresa</a>
+
+      <a href="login.html">Login e Cadastro</a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- Logo clicável -->
+  <a href="index.html">
+
+    <img
+      src="../img/logo.png"
+      alt="Logo InterPoint BP"
+      class="logo-abaixo-esquerda"
+    >
+
+  </a>
+
+
+  <!-- Conteúdo principal -->
+  <main class="conteudo">
+
+    <h1>Nossos Planos</h1>
+
+
+    <!-- Container dos planos -->
+    <div class="planos-container">
+
+
+      <!-- Plano Básico -->
+      <section
+        class="plano"
+        tabindex="0"
+        aria-labelledby="plano-basico-title"
+      >
+
+        <header>
+
+          <svg
+            class="plano-icon"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
+          >
+
+            <circle
+              cx="32"
+              cy="32"
+              r="30"
+              stroke="#00BFFF"
+              stroke-width="4"
+              fill="none"
+            />
+
+            <path
+              d="M20 32h24M32 20v24"
+              stroke="#00BFFF"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+
+          </svg>
+
+          <h2 id="plano-basico-title">
+            Plano Básico
+          </h2>
+
+        </header>
+
+        <p>Internet até 50 Mbps</p>
+
+        <p>
+          Conexão estável para navegação e streaming
+        </p>
+
+        <p>
+          <strong>R$ 79,90/mês</strong>
+        </p>
+
+        <p class="highlight">
+          Ideal para uso doméstico básico
+        </p>
+
+        <a
+          href="contato.html"
+          class="btn-assinar"
+          role="button"
+        >
+          Assinar plano
+        </a>
+
+      </section>
+
+
+
+      <!-- Plano Avançado -->
+      <section
+        class="plano"
+        tabindex="0"
+        aria-labelledby="plano-avancado-title"
+      >
+
+        <header>
+
+          <svg
+            class="plano-icon"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
+          >
+
+            <rect
+              x="12"
+              y="12"
+              width="40"
+              height="40"
+              rx="8"
+              ry="8"
+              stroke="#00BFFF"
+              stroke-width="4"
+              fill="none"
+            />
+
+            <path
+              d="M20 32h24M32 20v24"
+              stroke="#00BFFF"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+
+          </svg>
+
+          <h2 id="plano-avancado-title">
+            Plano Avançado
+          </h2>
+
+        </header>
+
+        <p>Internet até 150 Mbps</p>
+
+        <p>
+          Ótimo para jogos online e vídeo chamadas
+        </p>
+
+        <p>
+          <strong>R$ 129,90/mês</strong>
+        </p>
+
+        <p class="highlight">
+          Perfeito para uso intenso e streaming HD
+        </p>
+
+        <a
+          href="contato.html"
+          class="btn-assinar"
+          role="button"
+        >
+          Assinar plano
+        </a>
+
+      </section>
+
+
+
+      <!-- Plano Premium -->
+      <section
+        class="plano premium"
+        tabindex="0"
+        aria-labelledby="plano-premium-title"
+      >
+
+        <header>
+
+          <svg
+            class="plano-icon"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            focusable="false"
+          >
+
+            <polygon
+              points="32 4 39 24 60 24 42 38 49 58 32 46 15 58 22 38 4 24 25 24"
+              stroke="#ffd700"
+              stroke-width="4"
+              fill="none"
+            />
+
+          </svg>
+
+          <h2 id="plano-premium-title">
+            Plano Premium
+          </h2>
+
+        </header>
+
+        <p>Internet até 300 Mbps</p>
+
+        <p>
+          Máxima velocidade e estabilidade
+        </p>
+
+        <p>
+          <strong>R$ 199,90/mês</strong>
+        </p>
+
+        <p class="highlight">
+          Para quem exige o melhor
+        </p>
+
+        <a
+          href="contato.html"
+          class="btn-assinar"
+          role="button"
+        >
+          Assinar plano
+        </a>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- Rodapé -->
+  <footer>
+
+    <p>
+      © 2025 InterPoint BP - Todos os direitos reservados.
+    </p>
+
+    <a href="termos.html">Termos de Uso</a>
+    |
+    <a href="privacidade.html">
+      Política de Privacidade
+    </a>
+
+  </footer>
+
+</body>
+</html>

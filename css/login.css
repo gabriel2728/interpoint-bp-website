@@ -1,0 +1,171 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url("../img/fundo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #df3131;
+      color: #fff;
+      text-align: center;
+    }
+
+   /* Cabeçalho topo azul escuro */
+    .topo {
+      background-color: #031f7c; /* Azul escuro */
+      padding: 10px 0; /* Espaçamento vertical */
+    }
+
+    /* Barra de navegação */
+    .navbar {
+      display: flex; /* Usa flexbox para layout horizontal */
+      justify-content: space-between; /* Espaça itens nas extremidades */
+      align-items: center; /* Alinha verticalmente ao centro */
+      background-color: #d7e60d; /* Fundo amarelo */
+      padding: 10px 20px; /* Espaçamento interno */
+    }
+
+    /* Caixa de busca */
+    .search-box input {
+      padding: 5px 5px; /* Espaçamento interno do input */
+      border-radius: 10px; /* Borda arredondada */
+      border: none; /* Remove borda padrão */
+      width: 200px; /* Largura fixa */
+    }
+
+    .links a {
+      margin-left: 40px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .logo-abaixo {
+        display: block;
+        width: 150px;
+        margin: 15px 0 30px 20px;
+        height: auto;
+    }
+
+    .conteudo {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      flex: 1;
+      min-width: 300px;
+    }
+
+    form h2 {
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: #d7e60d;
+      color: #000;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background-color: #c1d803;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #fff;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+   
+
+@media (max-width: 1000px) {
+  .form-container {
+    gap: 20px;
+  }
+
+  form {
+    min-width: 280px;
+  }
+
+  .logo-abaixo {
+    width: 120px;
+    margin-left: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links a {
+    margin-left: 0;
+  }
+
+  .search-box {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,277 @@
+ /* Reset básico para todos os elementos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Corpo da página */
+    body {
+      background-image: url(../img/fundo.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #df3131;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    /* Cabeçalho topo azul escuro */
+    .topo {
+      background-color: #031f7c;
+      padding: 10px 0;
+    }
+
+    /* Navbar principal */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d7e60d;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    /* Caixa de busca */
+    .search-box input {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+      font-size: 1rem;
+      transition: width 0.3s ease;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      width: 250px;
+    }
+
+    /* Links do menu */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .links a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 5px 8px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .links a:hover,
+    .links a:focus {
+      text-decoration: none;
+      background-color: #c1d803;
+      color: #000;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .logo-abaixo-esquerda {
+  display: block;                  /* Faz a imagem ser tratada como bloco */
+  width: 180px;                    /* Largura da imagem */
+  max-width: 90vw;                 /* Evita quebrar layout em telas pequenas */
+  margin: 20px 0 30px 20px;        /* Espaço acima, à direita, abaixo e à esquerda */
+  height: auto;                    /* Altura automática proporcional */
+}
+
+
+    /* Conteúdo principal */
+    .conteudo {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.55);
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    /* Títulos */
+    .conteudo h1, .conteudo h2 {
+      color: #ffd700;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Parágrafos */
+    .conteudo p {
+      margin-bottom: 20px;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      color: #eee;
+    }
+
+    /* Lista de diferenciais */
+    .conteudo ul {
+      margin-bottom: 25px;
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #ddd;
+      font-size: 1.05rem;
+    }
+
+    /* Imagens centralizadas */
+    .imagem-centralizada {
+      display: block;
+      max-width: 700px;
+      width: 100%;
+      margin: 20px auto 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    /* Botão de call-to-action */
+    .btn-cta {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #d7e60d;
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .btn-cta:hover,
+    .btn-cta:focus {
+      background-color: #c1d803;
+      transform: scale(1.05);
+      outline: none;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #111;
+      padding: 20px 10px;
+      font-size: 1rem;
+      color: #fff;
+      text-align: center;
+      margin-top: auto;
+      user-select: none;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+      color: #ffd700;
+      outline: none;
+    }
+
+    /* Menu hamburguer e ajustes para telas pequenas */
+    @media (max-width: 800px) {
+      /* Ajusta largura do input */
+      .search-box input {
+        width: 100%;
+        max-width: 280px;
+      }
+      /* Reduz espaço da navbar */
+      .navbar {
+        padding: 10px 15px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      /* Navbar muda para coluna */
+      .navbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      /* Busca vai para cima com margem */
+      .search-box {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Input ocupa quase toda a largura */
+      .search-box input {
+        width: 90%;
+        max-width: none;
+        font-size: 1.1rem;
+      }
+
+      /* Links em coluna */
+      .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        background-color: #d7e60d;
+        padding: 15px 0;
+        border-radius: 0 0 15px 15px;
+      }
+
+      /* Links maiores para toque */
+      .links a {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      /* Logo menor */
+      .logo-abaixo {
+        width: 140px;
+        margin-bottom: 30px;
+      }
+
+      /* Conteúdo com padding menor */
+      .conteudo {
+        padding: 20px 15px;
+        font-size: 0.95rem;
+      }
+
+      /* Ajusta tamanhos de texto */
+      .conteudo h1 {
+        font-size: 1.8rem;
+      }
+      .conteudo h2 {
+        font-size: 1.4rem;
+      }
+      .conteudo p, .conteudo ul {
+        font-size: 1rem;
+      }
+
+      /* Botão maior e mais fácil de tocar */
+      .btn-cta {
+        font-size: 1.15rem;
+        padding: 15px 25px;
+      }
+    }

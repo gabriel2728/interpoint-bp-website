@@ -1,0 +1,168 @@
+* {
+      margin: 0; /* Remove margens padrão */
+      padding: 0; /* Remove padding padrão */
+      box-sizing: border-box; /* Inclui padding e border no tamanho total */
+      font-family: Arial, sans-serif; /* Define fonte padrão */
+    }
+
+    /* Estilo do corpo da página */
+    body {
+      background-image: url(../img/fundo.png); /* Imagem de fundo */
+      background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+      background-repeat: no-repeat; /* Não repete a imagem */
+      background-position: center; /* Centraliza a imagem */
+      background-attachment: fixed; /* Fundo fixo na tela */
+      background-color: #1a1a1a; /* Cor de fundo caso a imagem não carregue */
+      color: #fff; /* Cor do texto branca */
+      text-align: center; /* Centraliza texto por padrão */
+    }
+
+    /* Cabeçalho topo azul escuro */
+    .topo {
+      background-color: #031f7c; /* Azul escuro */
+      padding: 10px 0; /* Espaçamento vertical */
+    }
+
+    /* Barra de navegação */
+    .navbar {
+      display: flex; /* Usa flexbox para layout horizontal */
+      justify-content: space-between; /* Espaça itens nas extremidades */
+      align-items: center; /* Alinha verticalmente ao centro */
+      background-color: #d7e60d; /* Fundo amarelo */
+      padding: 10px 20px; /* Espaçamento interno */
+    }
+
+    /* Caixa de busca */
+    .search-box input {
+      padding: 5px 10px; /* Espaçamento interno do input */
+      border-radius: 10px; /* Borda arredondada */
+      border: none; /* Remove borda padrão */
+      width: 200px; /* Largura fixa */
+    }
+
+    /* Links da navegação */
+    .links a {
+      margin-left: 40px; /* Espaço entre links */
+      color: #000; /* Cor do texto preta */
+      text-decoration: none; /* Remove sublinhado */
+      font-weight: bold; /* Texto em negrito */
+    }
+
+    /* Efeito hover nos links */
+    .links a:hover {
+      text-decoration: underline; /* Sublinhado ao passar o mouse */
+    }
+
+    /* Logo abaixo da navbar */
+    .logo-abaixo {
+      display: block; /* Exibe como bloco */
+      width: 150px; /* Largura fixa */
+      margin: 15px 0 30px 20px; /* Margem superior, inferior e esquerda */
+      height: auto; /* Altura proporcional */
+    }
+
+    /* Conteúdo principal */
+    .conteudo {
+      padding: 30px 20px; /* Espaçamento interno */
+      max-width: 1000px; /* Largura máxima */
+      margin: auto; /* Centraliza horizontalmente */
+      text-align: left; /* Texto alinhado à esquerda */
+      background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semitransparente */
+      border-radius: 20px; /* Bordas arredondadas */
+    }
+
+    /* Títulos principais dentro do conteúdo */
+    .conteudo h1, .conteudo h2 {
+      color: #ffd700; /* Cor dourada */
+      margin-bottom: 10px; /* Espaço abaixo do título */
+    }
+
+    /* Parágrafos do conteúdo */
+    .conteudo p {
+      margin-bottom: 20px; /* Espaço abaixo */
+      line-height: 1.6; /* Espaçamento entre linhas */
+    }
+
+    /* Imagem alinhada à esquerda com descrição */
+    .imagem-descricao {
+      display: block; /* Exibe como bloco */
+      float: left; /* Flutua para a esquerda */
+      max-width: 350px; /* Largura máxima */
+      width: 100%; /* Largura 100% dentro do max */
+      margin: 20px 30px 20px 0; /* Margem: topo, direita, baixo, esquerda */
+      border-radius: 15px; /* Bordas arredondadas */
+    }
+
+    /* Imagem alinhada à direita */
+    .imagem-direita {
+      float: right; /* Flutua para a direita */
+      max-width: 350px; /* Largura máxima */
+      width: 100%; /* Largura 100% dentro do max */
+      margin: 20px 0 20px 30px; /* Margem: topo, direita, baixo, esquerda */
+      border-radius: 15px; /* Bordas arredondadas */
+    }
+
+    /* Limpa os floats para evitar sobreposição */
+    .clear {
+      clear: both; /* Limpa flutuações anteriores */
+    }
+
+    /* Caixa de destaque com borda dourada à esquerda */
+    .destaque {
+      background-color: #222; /* Fundo escuro */
+      padding: 20px; /* Espaçamento interno */
+      border-left: 5px solid #ffd700; /* Borda esquerda dourada */
+      margin: 30px 0; /* Margem vertical */
+      border-radius: 10px; /* Bordas arredondadas */
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #111; /* Fundo quase preto */
+      padding: 15px; /* Espaçamento interno */
+      font-size: 0.9rem; /* Tamanho da fonte */
+      color: #fff; /* Cor branca */
+      margin-top: 40px; /* Espaço acima do rodapé */
+      text-align: center; /* Centraliza texto */
+    }
+
+    /* Links do rodapé */
+    footer a {
+      color: #fff; /* Cor branca */
+      text-decoration: none; /* Sem sublinhado */
+      margin: 0 10px; /* Espaço entre links */
+    }
+
+    /* Efeito hover nos links do rodapé */
+    footer a:hover {
+      text-decoration: underline; /* Sublinhado ao passar o mouse */
+    }
+
+    /* Responsividade para telas pequenas (máx 700px) */
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column; /* Navbar em coluna */
+        align-items: flex-start; /* Alinha itens à esquerda */
+      }
+
+      .search-box {
+        margin-bottom: 10px; /* Espaço abaixo da caixa de busca */
+      }
+
+      .logo-abaixo {
+        margin-left: 20px; /* Margem esquerda */
+        width: 120px; /* Logo menor */
+        margin-bottom: 20px; /* Espaço abaixo */
+      }
+
+      /* Remove float das imagens e centraliza */
+      .imagem-descricao, .imagem-direita {
+        float: none; /* Remove flutuação */
+        display: block; /* Exibe como bloco */
+        margin: 20px auto; /* Centraliza horizontalmente */
+      }
+
+      .conteudo {
+        padding: 20px; /* Menos padding no conteúdo */
+      }
+    }

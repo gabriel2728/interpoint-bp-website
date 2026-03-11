@@ -1,0 +1,164 @@
+ /* Zera margens, paddings e define box-sizing para todos os elementos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif; /* Fonte padrão */
+    }
+
+    /* Estilo do corpo da página */
+    body {
+      background-image: url(../img/fundo.png); /* Fundo da página */
+      background-size: cover; /* Cobre toda a tela */
+      background-repeat: no-repeat; /* Não repete imagem */
+      background-position: center; /* Centraliza a imagem */
+      background-attachment: fixed; /* Fundo fixo ao rolar */
+      background-color: #1a1a1a; /* Cor de fundo de segurança */
+      color: #fff; /* Cor do texto */
+      text-align: center; /* Texto centralizado */
+    }
+
+    /* Cabeçalho azul escuro no topo */
+    .topo {
+      background-color: #031f7c; /* Azul escuro */
+      padding: 10px 0; /* Espaçamento interno */
+    }
+
+    /* Barra de navegação amarela */
+    .navbar {
+      display: flex; /* Usa flexbox */
+      justify-content: space-between; /* Espaça os itens */
+      align-items: center; /* Centraliza verticalmente */
+      background-color: #d7e60d; /* Amarelo */
+      padding: 10px 20px; /* Espaçamento interno */
+    }
+
+    /* Caixa de busca */
+    .search-box input {
+      padding: 5px 10px; /* Espaço interno */
+      border-radius: 10px; /* Borda arredondada */
+      border: none; /* Sem borda */
+      width: 200px; /* Largura da caixa */
+    }
+
+    /* Links da barra de navegação */
+    .links a {
+      margin-left: 40px; /* Espaço entre os links */
+      color: #000; /* Cor do texto */
+      text-decoration: none; /* Remove sublinhado */
+      font-weight: bold; /* Negrito */
+    }
+
+    .links a:hover {
+      text-decoration: underline; /* Sublinha ao passar o mouse */
+    }
+
+    /* Logo abaixo da navbar */
+    .logo-abaixo {
+      display: block; /* Bloco para centralizar */
+      width: 150px; /* Largura da imagem */
+      margin: 15px 0 30px 20px; /* Espaçamento externo */
+      height: auto; /* Altura automática */
+    }
+
+    /* Conteúdo principal */
+    .conteudo {
+      padding: 30px 20px; /* Espaço interno */
+      max-width: 1000px; /* Largura máxima */
+      margin: auto; /* Centraliza */
+      text-align: left; /* Alinha à esquerda */
+      background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido */
+      border-radius: 20px; /* Borda arredondada */
+    }
+
+    .conteudo h1, .conteudo h2 {
+      color: #ffd700; /* Dourado */
+      margin-bottom: 10px; /* Espaço inferior */
+    }
+
+    .conteudo p {
+      margin-bottom: 20px; /* Espaço inferior */
+      line-height: 1.6; /* Altura da linha */
+    }
+
+    /* Imagem à esquerda */
+    .imagem-esquerda {
+      display: block; /* Bloco */
+      float: left; /* Flutua à esquerda */
+      max-width: 350px; /* Largura máxima */
+      width: 100%; /* Responsiva */
+      margin: 20px 30px 20px 0; /* Espaço externo */
+      border-radius: 15px; /* Borda arredondada */
+    }
+
+    /* Imagem à direita */
+    .imagem-direita {
+      float: right; /* Flutua à direita */
+      max-width: 350px; /* Largura máxima */
+      width: 100%; /* Responsiva */
+      margin: 20px 0 20px 30px; /* Espaço externo */
+      border-radius: 15px; /* Borda arredondada */
+    }
+
+    /* Limpa flutuação */
+    .clear {
+      clear: both;
+    }
+
+    /* Caixa de destaque */
+    .destaque {
+      background-color: #222; /* Fundo cinza escuro */
+      padding: 20px; /* Espaçamento interno */
+      border-left: 5px solid #ffd700; /* Borda lateral dourada */
+      margin: 30px 0; /* Espaço vertical */
+      border-radius: 10px; /* Borda arredondada */
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #111; /* Fundo escuro */
+      padding: 15px; /* Espaço interno */
+      font-size: 0.9rem; /* Tamanho da fonte */
+      color: #fff; /* Cor do texto */
+      margin-top: 40px; /* Espaço superior */
+      text-align: center; /* Texto centralizado */
+    }
+
+    footer a {
+      color: #fff; /* Cor dos links */
+      text-decoration: none; /* Remove sublinhado */
+      margin: 0 10px; /* Espaçamento lateral */
+    }
+
+    footer a:hover {
+      text-decoration: underline; /* Sublinha ao passar o mouse */
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column; /* Coluna em vez de linha */
+        align-items: flex-start; /* Alinha à esquerda */
+      }
+
+      .search-box {
+        margin-bottom: 10px; /* Espaço inferior */
+      }
+
+      .logo-abaixo {
+        margin-left: 20px; /* Espaço à esquerda */
+        width: 120px; /* Reduz largura */
+        margin-bottom: 20px; /* Espaço inferior */
+      }
+
+      .imagem-esquerda, .imagem-direita {
+        float: none; /* Remove flutuação */
+        display: block; /* Bloco */
+        margin: 20px auto; /* Centraliza */
+      }
+
+      .conteudo {
+        padding: 20px; /* Ajusta espaçamento */
+      }
+      
+    }

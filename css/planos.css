@@ -1,0 +1,270 @@
+/* Reset básico e fonte */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    /* Corpo da página com fundo */
+    body {
+      background-image: url(../img/fundo.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-attachment: fixed; Removido para melhor performance em mobile */
+      background-color: #df3131;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Barra azul topo */
+    header.topo {
+      background-color: #031f7c;
+      padding: 10px 0;
+    }
+
+    /* Navbar com flex e fundo amarelo */
+    nav.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d7e60d;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Caixa de busca */
+    .search-box input {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+      font-size: 1em;
+    }
+
+    /* Link de navegação */
+    .links a {
+      margin-left: 30px;
+      color: #111; /* cor escura para melhor contraste */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.em;
+      outline-offset: 3px;
+    }
+
+    /* Hover links */
+    .links a:hover {
+      text-decoration: underline;
+      color: #031f7c;
+    }
+
+    /* Foco acessível em links e botões */
+    .links a:focus,
+    .btn-assinar:focus {
+      outline: 3px solid #ffd700;
+      outline-offset: 2px;
+    }
+
+ .logo-abaixo-esquerda {
+  display: block;                  /* Faz a imagem ser tratada como bloco */
+  width: 180px;                    /* Largura da imagem */
+  max-width: 90vw;                 /* Evita quebrar layout em telas pequenas */
+  margin: 20px 0 30px 20px;        /* Espaço acima, à direita, abaixo e à esquerda */
+  height: auto;                    /* Altura automática proporcional */
+}
+
+
+    /* Título principal */
+    h1 {
+      font-size: 3em;
+      margin-bottom: 1em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      color: #fff;
+    }
+
+    /* Container dos planos */
+    .planos-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+    }
+
+    /* Cada plano individual */
+    .plano {
+      background-color: rgba(46, 48, 51, 0.95);
+      border-radius: 12px;
+      padding: 25px 20px 30px 20px;
+      width: 280px;
+      box-shadow: 0 6px 12px rgba(163, 177, 36, 0.8);
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid transparent;
+      transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+      color: #fff;
+    }
+
+    /* Hover plano */
+    .plano:hover {
+      background-color: #2e3040;
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(255, 215, 0, 0.8);
+      border-color: #ffd700;
+      color: #ffd700;
+    }
+
+    /* Plano Premium destacado */
+    .plano.premium {
+      border-color: #ffd700;
+      box-shadow: 0 0 15px 4px #ffd700;
+      z-index: 10;
+    }
+
+    .plano.premium:hover {
+      box-shadow: 0 0 30px 8px #ffd700;
+      background-color: #222;
+      color: #ffd700;
+    }
+
+    /* Título do plano */
+    .plano h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      color: #00BFFF;
+      transition: color 0.3s ease;
+    }
+
+    /* Título do plano no hover */
+    .plano:hover h2 {
+      color: #ffd700;
+    }
+
+    /* Texto dos planos */
+    .plano p {
+      font-size: 1.1em;
+      margin: 10px 0;
+      line-height: 1.4;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    /* Botão Assinar estilizado */
+    .btn-assinar {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 8px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 5px 8px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-assinar:hover {
+      background-color: #000000;
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Ícones SVG planos */
+    .plano-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+      fill: #00BFFF;
+      transition: fill 0.3s ease;
+    }
+
+    .plano:hover .plano-icon {
+      fill: #ffd700;
+    }
+
+    /* Texto em destaque */
+    .highlight {
+      font-weight: bold;
+      font-size: 1.15em;
+      color: #ffd700;
+      margin-top: 10px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #111;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #fff;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Visually hidden class para acessibilidade (labels invisíveis) */
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      .planos-container {
+        justify-content: center;
+        gap: 20px;
+      }
+      .plano {
+        width: 90%;
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .search-box {
+        margin-bottom: 10px;
+      }
+
+      .links {
+        margin-left: 0;
+      }
+
+      .logo-abaixo {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+    }
