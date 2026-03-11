@@ -3,24 +3,16 @@
 Website desenvolvido como projeto acadêmico para simular o site institucional de uma empresa fictícia de internet chamada **InterPoint BP**.
 
 O projeto apresenta páginas informativas sobre a empresa, planos de internet, produtos e serviços, além de uma interface de **login e cadastro de usuários**.
-
 ---
 
 # 📸 Preview do projeto
 ![Preview do site](img/preview.png)
 
-Adicione aqui um print do site depois.
-
-Exemplo:
-
----
-
-# 🚀 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 * **HTML5** → Estrutura das páginas
 * **CSS3** → Estilização e layout
 * **Flexbox** → Organização de elementos na página
-* **Responsividade** → Ajustes para diferentes tamanhos de tela
 
 ---
 
@@ -51,7 +43,7 @@ interpoint-bp
 
 ---
 
-# 📌 Funcionalidades
+## Funcionalidades
 
 * Página inicial com apresentação da empresa
 * Navegação entre páginas do site
@@ -64,7 +56,7 @@ interpoint-bp
 
 ---
 
-# 💡 Boas práticas aplicadas
+## Boas práticas aplicadas
 
 * Separação de **HTML e CSS**
 * Organização de arquivos em **pastas**
@@ -73,21 +65,21 @@ interpoint-bp
 
 ---
 
-# 👨‍💻 Integrantes do projeto
+## Integrantes do projeto
 
 * Gabriel Costa Lima
-* Nome do colega
-* Nome do colega
+* Aryana de Morais
+* Nicolas Claudiano
 
 ---
 
-# 📚 Contexto acadêmico
+## Contexto acadêmico
 
 Projeto desenvolvido para a disciplina de **Desenvolvimento Web / Interfaces** no curso de **Desenvolvimento de Software Multiplataforma (DSM)** da **FATEC**.
 
 ---
 
-# ▶️ Como executar o projeto
+## Como executar o projeto
 
 1. Baixe ou clone o repositório
 
@@ -107,7 +99,7 @@ em qualquer navegador.
 
 ---
 
-# 🔗 Possível melhoria futura
+## Possível melhoria futura
 
 * Implementação de **JavaScript**
 * Sistema de **login funcional**
@@ -116,7 +108,7 @@ em qualquer navegador.
 
 ---
 
-# 📄 Licença
+## Licença
 
 Este projeto foi desenvolvido apenas para fins **educacionais**.
 
